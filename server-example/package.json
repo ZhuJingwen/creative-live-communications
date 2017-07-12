@@ -1,0 +1,17 @@
+{
+  "name": "creative-live-communications",
+  "version": "1.0.0",
+  "description": "This is a simple web app for collaborative drawing.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^1.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
