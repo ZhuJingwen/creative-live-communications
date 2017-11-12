@@ -13,9 +13,9 @@ var socket = require('socket.io-client')('http://itp.jingwenzhu.com:8080');
 parser.on('data', function (inString) {
   //console.log('data: ' + inString.trim());
   var inData = inString.trim().split(',');
-  var x = 400+parseInt(inData[0]);
-  var y = 300+parseInt(inData[1]);
-  var c = parseInt(inData[2]);
+  var x = 400+10*parseInt(inData[0]);
+  var y = 300+10*parseInt(inData[1]);
+  var c = 10*parseInt(inData[2]);
   socket.emit('new shape', {
     s: "ellipse",
     x: x,
